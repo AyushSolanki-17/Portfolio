@@ -1,0 +1,62 @@
+
+@media only screen and (max-width: 576px){
+
+    /* Styling Navbar Profile Image */
+    .top-header .navbar .navbar-brand img{
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #mainSection{
+        margin: 10% 0%;
+    }
+    #homeSection{
+        position: relative;
+        padding: 0%;
+    }
+    #homeSection::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background: url("../img/Programmer.png");
+        background-size: cover;
+        z-index: -4;
+        opacity: 0.1;
+    }
+    .homeImg{
+        display: none;
+    }
+    .aboutImg{
+        display: none;
+    }
+    #aboutSection{
+        position: relative;
+        padding: 15% 0%;
+    }
+    #aboutSection::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        background: url("../img/aboutme100.png");
+        background-size: cover;
+        z-index: -4;
+        opacity: 0.1;
+    }
+    #serviceSection{
+        margin: 10% 0%;
+    }
+    #serviceSection .servicesRow img{
+        width: 25%;
+    }
+    /* Used to add space between cards in mobile design */
+    #serviceSection .servicesRow .mg{
+        margin: 3.5% 0%;
+    }
+}

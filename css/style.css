@@ -1,4 +1,165 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+
+/* Styling Root */
 :root{
     font-family: 'Roboto';
+    padding: 0%;
+    margin: 0%;
+    max-width: 100%;
+
+    /* Specifying Font Variables */
+    --style-1: 'Caveat', cursive;;
+
+    /* Specifying Colors */
+    --blue-gradient: linear-gradient(to right top, #273b59, #215271, #116986, #008296, #119aa1);
+    /* --blue-gradient: -webkit-linear-gradient(75deg, rgba(35,106,167,1) 30%, rgba(129,219,217,0.9865079820990896) 100%);; */
+}
+
+
+/* Styling Navbar Profile Image */
+.top-header .navbar .navbar-brand img{
+    width: 30%;
+    border-radius: 50px;
+}
+
+/* Background White */
+.bg-white{
+    background-color: white;
+}
+
+/* Styling Navbar link text */
+.top-header .nav-link{
+    font-weight: 500;
+    font-size: 1.35rem;
+    background: var(--blue-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.top-header .nav-link:hover{
+    font-weight: 700;
+}
+.top-header .active{
+    font-weight: 700;
+}
+
+/* Aligning Links to right side */
+#navbarNav{
+    justify-content: flex-end;
+}
+
+/* Image on homepage */
+.homeImg{
+    width: 100%;
+}
+/* Styling Main Section */
+#mainSection{
+    margin: 5% 0%;
+}
+
+#homeSection{
+    margin: 5% 0%;
+}
+
+/* Styling Greeting wishes */
+#greeting{
+    font-family: var(--style-1);
+    margin-bottom: 5%;
+}
+
+/* Home Section Content Center */
+#homeSection .justify-content-center{
+    height: 100%;
+}
+/* Styling Button Row */
+.btn-row{
+    margin: 5% 0%;
+}
+.btn-row a{
+    margin: 0% 2%!important;
+    position: relative;
+    /* border-width: 2.5px!important; */
+    font-weight: bolder!important;
+    /* background-clip: padding-box; */
+    border: 0px solid transparent;
+    border-radius: 5px;
+    transition: background .6s ease;
+    
+}
+#homeSection .btn-row .btn-outlined{
+    background-color: white;
+}
+#homeSection .btn-row .btn-outlined:hover{
+    background-color: var(--blue-gradient);
+    color: white;
+}
+#homeSection .btn-row .btn-outlined::after{
+    content: "";
+    position: absolute;
+    top: -3.5px;left: -3.5px;
+    bottom: -3.5px;right: -3.5px;
+    background: var(--blue-gradient);
+    z-index: -1;
+    border-radius: 5px;
+}
+
+#homeSection .btn-row .btn-full{
+    background-color: var(--blue-gradient);
+    color: white;
+}
+#homeSection .btn-row .btn-full:hover{
+    background-color: white;
+    color: black;
+}
+#homeSection .btn-row .btn-full::after{
+    content: "";
+    position: absolute;
+    top: -3.5px;left: -3.5px;
+    bottom: -3.5px;right: -3.5px;
+    background: var(--blue-gradient);
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.aboutImg{
+    width: 100%;
+    border-radius: 15px;
+}
+
+#serviceSection{
+    margin: 7% 0%;
+}
+.serviceBox{
+    border: 1px solid gray;
+    width: 100%;
+}
+.servicesRow .card{
+    margin: 5%;
+    padding-top: 2.5%;
+}
+.servicesRow .card img{
+    width: 50%;
+    
+}
+.servicesRow .card:hover{
+    box-shadow: 0 0 5px 5px #2d70d4de;
+    margin-top: 1%;
+}
+#footer{
+    background-color: #121212;
+    padding: 7% 5%;
+    color: rgba(255, 255, 255, 0.986);
+}
+#footer a{
+    color: aliceblue;
+    text-decoration: none;
+}
+#socialGroup{
+    list-style: none;
+    padding: 0%;
+}
+.justif-text{
+    text-align: justify;
 }
