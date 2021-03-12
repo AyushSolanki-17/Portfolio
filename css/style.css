@@ -160,6 +160,6 @@
     list-style: none;
     padding: 0%;
 }
-.justif-text{
-    text-align: justify;
+.justify-text{
+    text-align: justify!important;
 }
