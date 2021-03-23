@@ -8,7 +8,7 @@ window.onload = ()=>{
     if(dt.getHours()<12){
         greeting.innerText = "Good Morning!";
     }
-    else if(dt.getHours()>12 && dt.getHours()<16){
+    else if(dt.getHours()>=12 && dt.getHours()<16){
         greeting.innerText = "Good Afternoon!";
     }
     else{
